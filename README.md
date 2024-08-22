@@ -48,7 +48,7 @@ Before you can run this application locally, you'll need to have the following i
 #### Start the server
 
 ```bash
-  npm run start
+  npm run dev
 ```
 
 
