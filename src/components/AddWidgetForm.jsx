@@ -9,6 +9,7 @@ function AddWidgetForm({addWidget, cancel}) {
         addWidget({name, text});
     }
   return (
+    //a side panel form to collect the new widget entry
     <div className='w-[25rem] h-screen absolute top-0 right-0 bg-violet-600'>
       <form className='flex flex-col items-center' action="" onSubmit={handleSubmit}>
         <h1 className='font-bold text-2xl mt-10'>ADD NEW WIDGET</h1>

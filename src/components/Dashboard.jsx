@@ -7,6 +7,7 @@ function Dashboard() {
     const [categories, setCategories] = useState([]);
     const [searchItems, setSearchItems] = useState('');
 
+    //useEffect will call the function while the page gets loaded and gives our locally stored data if available
     useEffect(() => {
         const localData = localStorage.getItem('localStoredData');
         if(localData){
@@ -16,10 +17,12 @@ function Dashboard() {
         }
     },[]);
 
+    //all the new data will be updated to the local storage through updateLocalStoredData
     const updateLocalStoredData = (updateCategories) => {
         localStorage.setItem('localStoredData', JSON.stringify({ categories: updateCategories}))
     }
 
+    //for adding new widget to the database
     const addWidget = (categoryName, widget) => {
         const updateCategories = categories.map(category => {
             if(category.name === categoryName){
@@ -31,6 +34,7 @@ function Dashboard() {
         updateLocalStoredData(updateCategories);
     }
 
+    //for deleting any particular widget to the database
     const removeWidget = (categoryName, widgetName) => {
         const updateCategories = categories.map(category =>{
             if(category.name === categoryName){
@@ -42,6 +46,7 @@ function Dashboard() {
         updateLocalStoredData(updateCategories);
     }
 
+    //for filtering the widget, here you can search using either widget.name or widget.text
     const filteredCategories = categories.map(category => ({...category, widgets: category.widgets.filter(widget => widget.name.toLowerCase().includes(searchItems.toLowerCase()) || widget.text.toLowerCase().includes(searchItems.toLowerCase()))}))
 
   return (

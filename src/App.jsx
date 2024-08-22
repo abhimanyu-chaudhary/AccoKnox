@@ -8,7 +8,8 @@ function App() {
   return (
     <div className={`${theme ? "bg-white" : "bg-slate-900"} w-screen h-screen  ${theme ? "text-black" : "text-black"} `} >
       <Header setTheme={setTheme} theme={theme} />
-      <Dashboard />
+      <Dashboard />  
+      {/* //dashboard is the main section of our react app */}
     </div>
   )
 }

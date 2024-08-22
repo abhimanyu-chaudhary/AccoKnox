@@ -5,6 +5,7 @@ import AddWidgetForm from './AddWidgetForm';
 function Category({category, addWidget, removeWidget}) {
     const [showCard, setShowCard] = useState(false);
 
+    //to fetch the user input in the new widget and passing them to the dashboard.
     const handleAddWidget = (widget) => {
         addWidget(category.name, widget);
         setShowCard(false);
@@ -20,13 +21,13 @@ function Category({category, addWidget, removeWidget}) {
             </div>
         ))}
 
+      {/* //conditional rendering applied */}
         {showCard ? (
             <AddWidgetForm addWidget={handleAddWidget} cancel={() => setShowCard(false)}  />
         ): (
             <button onClick={()=> setShowCard(true)} className='w-40 h-16 bg-violet-500 rounded-md'>Add Widget + </button>
         )}
       </div>
-      
     </div>
   )
 }

@@ -12,7 +12,7 @@ function Header({ setTheme, theme }) {
       <h1 className={`${theme ? "text-black" : "text-white"} font-semibold`}>CMAPP DASHBOARD</h1>
       <div className="flex items-center gap-2">
         <button className="px-2 py-[6px] bg-slate-300 rounded-md">
-          Add Widget +{" "}
+          Add Widget +
         </button>
         <button
           className="text-xl px-2 py-2 bg-slate-300 rounded-md"
