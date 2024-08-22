@@ -67,6 +67,4 @@ Live Website: https://dashboard-design-opal.vercel.app/
 
 
 
-## Screenshots
 
-![App Screenshot](https://drive.google.com/file/d/1dIRv32FxwLZr-ZTWWBJnW8X0ah_iFZqK/view?usp=sharing)
