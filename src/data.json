@@ -1,0 +1,30 @@
+{
+  "categories": [
+    {
+      "name": "Company Profit Analysis",
+      "widgets": [
+        {
+          "name": "Widget 1",
+          "text": "Total Revenue"
+        },
+        {
+          "name": "Widget 2",
+          "text": "Total Expenses"
+        }
+      ]
+    },
+    {
+      "name": "Marketing Expenses",
+      "widgets": [
+        {
+          "name": "Widget A",
+          "text": "Facebook Ads Expenses"
+        },
+        {
+          "name": "Widget B",
+          "text": "Promotional Ads Expenses"
+        }
+      ]
+    }
+  ]
+}
